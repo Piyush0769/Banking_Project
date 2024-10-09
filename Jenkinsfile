@@ -3,7 +3,8 @@ pipeline {
     stages{
         stage('build project'){
             steps{
-                git url:https://github.com/Piyush0769/Banking_Project.git, branch: "master"
+                git url: 'https://github.com/Piyush0769/Banking_Project.git', branch: 'main'
+
                 sh 'mvn clean package'
               
             }
